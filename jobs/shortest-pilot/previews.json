@@ -1,0 +1,65 @@
+{
+  "time_basis": "requested_vs_actual_pts",
+  "frames": [
+    {
+      "t_sec": 0.0,
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_00_t0.000s.jpg",
+      "ok": true,
+      "exit_code": 0,
+      "bytes": 301425,
+      "stderr_tail": ", 10 tbn (default)\n    Metadata:\n      encoder         : Lavc62.28.102 mjpeg\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\n    Side data:\n      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A\n[out#0/image2 @ 00000241d3b8c540] video:294KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=    1 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.10 bitrate=N/A speed=2.34x elapsed=0:00:00.04    \n",
+      "requested_time_sec": 0.0,
+      "actual_pts_sec": 0.0,
+      "source_frame_index": 0,
+      "filename_time_is": "requested_seek"
+    },
+    {
+      "t_sec": 11.899,
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_01_t11.899s.jpg",
+      "ok": true,
+      "exit_code": 0,
+      "bytes": 174776,
+      "stderr_tail": ", 10 tbn (default)\n    Metadata:\n      encoder         : Lavc62.28.102 mjpeg\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\n    Side data:\n      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A\n[out#0/image2 @ 000002140f93e440] video:171KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=    1 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.10 bitrate=N/A speed=2.42x elapsed=0:00:00.04    \n",
+      "requested_time_sec": 11.899,
+      "actual_pts_sec": 11.899033,
+      "source_frame_index": 119,
+      "filename_time_is": "requested_seek"
+    },
+    {
+      "t_sec": 23.797,
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_02_t23.797s.jpg",
+      "ok": true,
+      "exit_code": 0,
+      "bytes": 172005,
+      "stderr_tail": ", 10 tbn (default)\n    Metadata:\n      encoder         : Lavc62.28.102 mjpeg\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\n    Side data:\n      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A\n[out#0/image2 @ 0000018fbedd95c0] video:168KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=    1 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.10 bitrate=N/A speed=2.25x elapsed=0:00:00.04    \n",
+      "requested_time_sec": 23.797,
+      "actual_pts_sec": 23.797744,
+      "source_frame_index": 238,
+      "filename_time_is": "requested_seek"
+    },
+    {
+      "t_sec": 35.696,
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_03_t35.696s.jpg",
+      "ok": true,
+      "exit_code": 0,
+      "bytes": 187347,
+      "stderr_tail": ", 10 tbn (default)\n    Metadata:\n      encoder         : Lavc62.28.102 mjpeg\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\n    Side data:\n      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A\n[out#0/image2 @ 000001ad45d2f240] video:183KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=    1 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.10 bitrate=N/A speed=2.58x elapsed=0:00:00.03    \n",
+      "requested_time_sec": 35.696,
+      "actual_pts_sec": 35.696411,
+      "source_frame_index": 357,
+      "filename_time_is": "requested_seek"
+    },
+    {
+      "t_sec": 47.395,
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_04_t47.395s.jpg",
+      "ok": true,
+      "exit_code": 0,
+      "bytes": 263505,
+      "stderr_tail": "ault)\n    Metadata:\n      encoder         : Lavc62.28.102 mjpeg\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\n    Side data:\n      CPB properties: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: N/A\n[out#0/image2 @ 0000015395b5b340] video:257KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=    1 fps=0.0 q=2.0 Lsize=N/A time=00:00:00.10 bitrate=N/A dup=1 drop=0 speed=3.25x elapsed=0:00:00.03    \n",
+      "requested_time_sec": 47.395,
+      "actual_pts_sec": 47.394989,
+      "source_frame_index": 474,
+      "filename_time_is": "requested_seek"
+    }
+  ]
+}

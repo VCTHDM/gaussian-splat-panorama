@@ -1,0 +1,15 @@
+{
+    "schema":  "gs.ubuntu.download.process.v1",
+    "started_local":  "2026-09-09T20:18:34.1878265+08:00",
+    "started_utc":  "2026-09-09T12:18:34.1893394Z",
+    "pid":  16740,
+    "has_exited":  false,
+    "file":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "script":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\scripts\\download-ubuntu-offline.ps1",
+    "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\ubuntu-wait-host.stdout.log",
+    "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\ubuntu-wait-host.stderr.log",
+    "live_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\ubuntu-download-live.json",
+    "result_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\reports\\ubuntu-download-result.json",
+    "msiexec_ran":  false,
+    "mode":  "adopt-wait-merge"
+}

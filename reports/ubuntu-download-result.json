@@ -1,0 +1,68 @@
+{
+    "schema":  "gs.ubuntu.offline.download.v1",
+    "pid":  4836,
+    "started_local":  "2026-09-09T20:20:19.5249198+08:00",
+    "started_utc":  "2026-09-09T12:20:19.5264312Z",
+    "msiexec_ran":  false,
+    "url":  "https://releases.ubuntu.com/jammy/ubuntu-22.04.5-wsl-amd64.wsl",
+    "expected_bytes":  360684292,
+    "expected_sha256":  "4499c4fe257f2fc83145b429ce211a0a43fd590e70d6261ede616210947d9f8f",
+    "original_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl",
+    "original_bytes":  91844608,
+    "method":  "range-3",
+    "status":  "ok",
+    "range_probe":  {
+                        "ok":  true,
+                        "adopted":  true,
+                        "accept_ranges":  true,
+                        "http_206":  true,
+                        "etag":  "\"157f9b04-64c981d810a80\"",
+                        "content_length":  360684292,
+                        "skipped_probe":  true
+                    },
+    "parts":  [
+                  {
+                      "index":  0,
+                      "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl.part0",
+                      "range":  "91844608-181457835",
+                      "expected":  89613228,
+                      "bytes":  89613228,
+                      "pid":  null,
+                      "exit_code":  null,
+                      "skipped":  true,
+                      "adopted":  false
+                  },
+                  {
+                      "index":  1,
+                      "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl.part1",
+                      "range":  "181457836-271071063",
+                      "expected":  89613228,
+                      "bytes":  89613228,
+                      "pid":  4480,
+                      "exit_code":  null,
+                      "skipped":  false,
+                      "adopted":  true
+                  },
+                  {
+                      "index":  2,
+                      "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl.part2",
+                      "range":  "271071064-360684291",
+                      "expected":  89613228,
+                      "bytes":  89613228,
+                      "pid":  null,
+                      "exit_code":  null,
+                      "skipped":  true,
+                      "adopted":  false
+                  }
+              ],
+    "candidate_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl.candidate",
+    "candidate_bytes":  360684292,
+    "sha256":  "4499c4fe257f2fc83145b429ce211a0a43fd590e70d6261ede616210947d9f8f",
+    "sha256_ok":  true,
+    "partial_backup":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl.partial-91844608",
+    "error":  null,
+    "result_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\reports\\ubuntu-download-result.json",
+    "live_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\ubuntu-download-live.json",
+    "ended_local":  "2026-09-09T20:23:40.2697606+08:00",
+    "ended_utc":  "2026-09-09T12:23:40.2697606Z"
+}

@@ -1,0 +1,37 @@
+{
+    "schema":  "gs.wsl.pre-install.v1",
+    "captured_local":  "2026-09-09T20:34:07.3206341+08:00",
+    "captured_utc":  "2026-09-09T12:34:07.3231813Z",
+    "elevated":  true,
+    "user":  "USER-20260519LM\\Administrator",
+    "virtual_machine_platform":  {
+                                     "FeatureName":  "VirtualMachinePlatform",
+                                     "State":  2,
+                                     "RestartNeeded":  false
+                                 },
+    "wsl_candidates":  [
+                           {
+                               "path":  "C:\\Windows\\System32\\wsl.exe",
+                               "exists":  false
+                           },
+                           {
+                               "path":  "C:\\Program Files\\WSL\\wsl.exe",
+                               "exists":  false
+                           },
+                           {
+                               "path":  "C:\\Program Files\\Windows Subsystem for Linux\\wsl.exe",
+                               "exists":  false
+                           }
+                       ],
+    "related_processes":  [
+
+                          ],
+    "same_target_install_processes":  [
+
+                                      ],
+    "same_target_count":  0,
+    "distro_dir_exists":  false,
+    "msi_exists":  true,
+    "msi_bytes":  258985984,
+    "ubuntu_exists":  true
+}

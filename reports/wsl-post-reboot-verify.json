@@ -1,0 +1,240 @@
+{
+    "schema":  "gs.wsl.post-reboot.verify.v1",
+    "started_utc":  "2026-09-09T13:23:42.8742219Z",
+    "started_local":  "2026-09-09T21:23:42+08:00",
+    "executor":  "grok-4.6-build",
+    "host_pid":  23740,
+    "permission_mode":  "auto",
+    "approval_mechanism_changed":  false,
+    "reboot_performed":  true,
+    "reboot_required":  false,
+    "ubuntu_ready":  true,
+    "gpu_visible":  true,
+    "msi_reinstalled":  false,
+    "feature_enable_rerun":  false,
+    "ubuntu_redownloaded":  false,
+    "steps":  [
+                  {
+                      "name":  "last-boot",
+                      "ok":  true,
+                      "detail":  "last_boot_local=2026-09-09T21:14:44+08:00; after_cbs=True",
+                      "utc":  "2026-09-09T13:23:43.1393663Z"
+                  },
+                  {
+                      "name":  "cbs-reboot-pending",
+                      "ok":  true,
+                      "detail":  "Test-Path HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending =\u003e False",
+                      "utc":  "2026-09-09T13:23:43.1424945Z"
+                  },
+                  {
+                      "name":  "iwslsupport",
+                      "ok":  true,
+                      "detail":  "Test-Path HKLM:\\Software\\Classes\\Interface\\{46f3c96d-ffa3-42f0-b052-52f5e7ecbb08} =\u003e True default=IWslSupport",
+                      "utc":  "2026-09-09T13:23:43.1424945Z"
+                  },
+                  {
+                      "name":  "wsl-exe",
+                      "ok":  true,
+                      "detail":  "preferred=C:\\Program Files\\WSL\\wsl.exe exists=True; system32=True; using=C:\\Program Files\\WSL\\wsl.exe",
+                      "utc":  "2026-09-09T13:23:43.1532039Z"
+                  },
+                  {
+                      "name":  "wslservice-query",
+                      "ok":  true,
+                      "detail":  "Status=Running StartType=Automatic",
+                      "utc":  "2026-09-09T13:23:43.3221838Z"
+                  },
+                  {
+                      "name":  "wsl-version",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False duration_ms=41",
+                      "utc":  "2026-09-09T13:23:43.4646996Z"
+                  },
+                  {
+                      "name":  "wsl-status",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False duration_ms=29",
+                      "utc":  "2026-09-09T13:23:43.4988631Z"
+                  },
+                  {
+                      "name":  "wsl-list",
+                      "ok":  false,
+                      "detail":  "exit=-1 timed_out=False duration_ms=30",
+                      "utc":  "2026-09-09T13:23:43.5335133Z"
+                  },
+                  {
+                      "name":  "import",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False duration_ms=7365",
+                      "utc":  "2026-09-09T13:23:50.9140746Z"
+                  },
+                  {
+                      "name":  "linux-uname",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False",
+                      "utc":  "2026-09-09T13:23:58.8201786Z"
+                  },
+                  {
+                      "name":  "linux-os-release",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False",
+                      "utc":  "2026-09-09T13:23:58.8977657Z"
+                  },
+                  {
+                      "name":  "linux-nvidia-smi-path",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False",
+                      "utc":  "2026-09-09T13:23:58.9998411Z"
+                  },
+                  {
+                      "name":  "linux-nvidia-smi",
+                      "ok":  true,
+                      "detail":  "exit=0 timed_out=False",
+                      "utc":  "2026-09-09T13:23:59.1337711Z"
+                  }
+              ],
+    "last_boot_utc":  "2026-09-09T13:14:44.5000000Z",
+    "last_boot_local":  "2026-09-09T21:14:44+08:00",
+    "cbs_enable_local":  "2026-09-09T21:05:32",
+    "boot_after_cbs_enable":  true,
+    "cbs_reboot_pending":  false,
+    "windows_update_reboot_required":  false,
+    "pending_file_rename_count":  0,
+    "iwslsupport_present":  true,
+    "iwslsupport_default":  "IWslSupport",
+    "iwslsupport_key":  "HKLM\\Software\\Classes\\Interface\\{46f3c96d-ffa3-42f0-b052-52f5e7ecbb08}",
+    "reboot_reason":  null,
+    "wsl_exe":  "C:\\Program Files\\WSL\\wsl.exe",
+    "wsl_preferred_exists":  true,
+    "wsl_system32_exists":  true,
+    "wslservice":  {
+                       "name":  "WslService",
+                       "status":  "Running",
+                       "start_type":  "Automatic",
+                       "win32_exit_code":  0,
+                       "process_id":  4628,
+                       "state":  "Running",
+                       "start_mode":  "Auto"
+                   },
+    "wsl_queries":  [
+                        {
+                            "name":  "version",
+                            "args":  [
+                                         "--version"
+                                     ],
+                            "exit_code":  0,
+                            "timed_out":  false,
+                            "killed_self_child":  false,
+                            "transport_ok":  true,
+                            "duration_ms":  41,
+                            "pid":  13832,
+                            "stdout":  "WSL 版本: 2.7.13.0\r\n内核版本: 6.18.33.2-2\r\nWSLg 版本: 1.0.73.2\r\nMSRDC 版本: 1.2.7214\r\nDirect3D 版本: 1.611.1-81528511\r\nDXCore 版本: 10.0.26100.1-240331-1435.ge-release\r\nWindows: 10.0.26100.2314\r\n",
+                            "stderr":  "",
+                            "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\post-reboot-wsl-version.txt",
+                            "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\post-reboot-wsl-version.err"
+                        },
+                        {
+                            "name":  "status",
+                            "args":  [
+                                         "--status"
+                                     ],
+                            "exit_code":  0,
+                            "timed_out":  false,
+                            "killed_self_child":  false,
+                            "transport_ok":  true,
+                            "duration_ms":  29,
+                            "pid":  22832,
+                            "stdout":  "默认版本: 2\r\n",
+                            "stderr":  "",
+                            "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\post-reboot-wsl-status.txt",
+                            "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\post-reboot-wsl-status.err"
+                        },
+                        {
+                            "name":  "list",
+                            "args":  [
+                                         "--list",
+                                         "--verbose"
+                                     ],
+                            "exit_code":  -1,
+                            "timed_out":  false,
+                            "killed_self_child":  false,
+                            "transport_ok":  true,
+                            "duration_ms":  30,
+                            "pid":  8444,
+                            "stdout":  "\u0002�(u�N \u0000L\u0000i\u0000n\u0000u\u0000x\u0000 \u0000�v \u0000W\u0000i\u0000n\u0000d\u0000o\u0000w\u0000s\u0000 \u0000P[�|�~�l\tg�]�[ň�v\u0006R�S\u00020\r\u0000\n\u0000�S\u001a�Ǐ�[ň\u0005S+T�N\u000bN�\u000ef�v\u0006R�Seg㉳Qdk�\u001a�\r\u0000\n\u0000\r\u0000\n\u0000O(u\u001c w\u0000s\u0000l\u0000.\u0000e\u0000x\u0000e\u0000 \u0000-\u0000-\u0000l\u0000i\u0000s\u0000t\u0000 \u0000-\u0000-\u0000o\u0000n\u0000l\u0000i\u0000n\u0000e\u0000\u0027\u0000 \u0000\u001d \u0017R�Q�S(u�v\u0006R�S\r\u0000\n\u0000�T \u0000\u001c w\u0000s\u0000l\u0000.\u0000e\u0000x\u0000e\u0000 \u0000-\u0000-\u0000i\u0000n\u0000s\u0000t\u0000a\u0000l\u0000l\u0000 \u0000\u003c\u0000D\u0000i\u0000s\u0000t\u0000r\u0000o\u0000\u003e\u0000\u001d  \u0000ۏL��[ň\u00020\r\u0000\n\u0000",
+                            "stderr":  "",
+                            "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\post-reboot-wsl-list.txt",
+                            "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\post-reboot-wsl-list.err"
+                        }
+                    ],
+    "gs_ubuntu_listed":  true,
+    "other_distro_lines":  [
+                               "\u0002�(u�N \u0000L\u0000i\u0000n\u0000u\u0000x\u0000 \u0000�v \u0000W\u0000i\u0000n\u0000d\u0000o\u0000w\u0000s\u0000 \u0000P[�|�~�l\tg�]�[ň�v\u0006R�S\u00020\r\u0000",
+                               "\u0000�S\u001a�Ǐ�[ň\u0005S+T�N\u000bN�\u000ef�v\u0006R�Seg㉳Qdk�\u001a�\r\u0000",
+                               "\u0000\r\u0000",
+                               "\u0000O(u\u001c w\u0000s\u0000l\u0000.\u0000e\u0000x\u0000e\u0000 \u0000-\u0000-\u0000l\u0000i\u0000s\u0000t\u0000 \u0000-\u0000-\u0000o\u0000n\u0000l\u0000i\u0000n\u0000e\u0000\u0027\u0000 \u0000\u001d \u0017R�Q�S(u�v\u0006R�S\r\u0000",
+                               "\u0000�T \u0000\u001c w\u0000s\u0000l\u0000.\u0000e\u0000x\u0000e\u0000 \u0000-\u0000-\u0000i\u0000n\u0000s\u0000t\u0000a\u0000l\u0000l\u0000 \u0000\u003c\u0000D\u0000i\u0000s\u0000t\u0000r\u0000o\u0000\u003e\u0000\u001d  \u0000ۏL��[ň\u00020\r\u0000",
+                               "\u0000"
+                           ],
+    "wsl_usable":  true,
+    "import":  {
+                   "attempted":  true,
+                   "skipped_exists":  false,
+                   "exit_code":  0,
+                   "timed_out":  false,
+                   "transport_ok":  true,
+                   "duration_ms":  7365,
+                   "pid":  2480,
+                   "stdout":  "�d\\O\u0010b�R�[\u0010b\u00020 \u0000\r\u0000\n\u0000",
+                   "stderr":  "",
+                   "list_after_exit":  0,
+                   "list_after":  "  NAME             STATE           VERSION\r\n* GS-Ubuntu2204    Stopped         2\r\n"
+               },
+    "linux_probes":  [
+                         {
+                             "name":  "uname",
+                             "exit_code":  0,
+                             "timed_out":  false,
+                             "transport_ok":  true,
+                             "duration_ms":  7866,
+                             "stdout":  "Linux USER-20260519LM 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux\n",
+                             "stderr":  "wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。\r\n"
+                         },
+                         {
+                             "name":  "os-release",
+                             "exit_code":  0,
+                             "timed_out":  false,
+                             "transport_ok":  true,
+                             "duration_ms":  74,
+                             "stdout":  "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+                             "stderr":  "wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。\r\n"
+                         },
+                         {
+                             "name":  "nvidia-smi-path",
+                             "exit_code":  0,
+                             "timed_out":  false,
+                             "transport_ok":  true,
+                             "duration_ms":  71,
+                             "stdout":  "-r-xr-xr-x 2 root root 848736 Aug 21 04:56 /usr/lib/wsl/lib/nvidia-smi\n",
+                             "stderr":  "wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。\r\n"
+                         },
+                         {
+                             "name":  "nvidia-smi",
+                             "exit_code":  0,
+                             "timed_out":  false,
+                             "transport_ok":  true,
+                             "duration_ms":  130,
+                             "stdout":  "GPU 0: NVIDIA GeForce RTX 4070 Ti (UUID: GPU-2b7c4e63-6802-7b0d-ab3f-a879417f9215)\n",
+                             "stderr":  "wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。\r\n"
+                         }
+                     ],
+    "ubuntu_22_04":  true,
+    "uname":  "Linux USER-20260519LM 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+    "os_release_excerpt":  "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+    "gpu_nvidia_smi_ok":  true,
+    "gpu_nvidia_smi_path_ok":  true,
+    "status":  "ready_for_sfm",
+    "next_owner":  "codex",
+    "next_task":  ".grok-tasks/03-shortest-sfm.md",
+    "ended_utc":  "2026-09-09T13:23:59.1398797Z"
+}

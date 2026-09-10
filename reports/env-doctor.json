@@ -1,0 +1,348 @@
+{
+    "collected_utc":  "2026-09-09T11:31:51.5156428Z",
+    "doctor_notes":  [
+                         "Parameter of version helper is VersionArgs, not Args (PowerShell automatic variable).",
+                         "External version queries timeout 15s; DISM timeout 60s; only self-started children are killed.",
+                         "Credential directories were not scanned; environment variables were not dumped."
+                     ],
+    "host":  {
+                 "os_caption":  "Microsoft Windows 11 专业版",
+                 "os_version":  "10.0.26100",
+                 "os_build":  "26100",
+                 "cpu_name":  "12th Gen Intel(R) Core(TM) i5-12490F",
+                 "cpu_cores":  6,
+                 "cpu_logical":  12,
+                 "ram_total_gib":  31.85,
+                 "ram_free_gib":  17.59,
+                 "hypervisor_present":  true,
+                 "manufacturer":  "Micro-Star International Co., Ltd.",
+                 "model":  "MS-7E02",
+                 "bcd_hypervisorlaunchtype":  "hypervisorlaunchtype    Auto",
+                 "bcd_query":  {
+                                   "exists":  true,
+                                   "path":  "C:\\Windows\\System32\\bcdedit.exe",
+                                   "exit_code":  0,
+                                   "timed_out":  false,
+                                   "killed_self_child":  false,
+                                   "stdout_head":  "Windows Boot Loader\n-------------------\nidentifier              {current}\ndevice                  partition=C:\npath                    \\Windows\\system32\\winload.efi\ndescription             Windows 11\nlocale                  zh-CN\ninherit                 {bootloadersettings}",
+                                   "stderr_head":  "",
+                                   "duration_ms":  51,
+                                   "pid":  8004,
+                                   "argv":  [
+                                                "/enum",
+                                                "{current}"
+                                            ],
+                                   "transport_ok":  true,
+                                   "error":  null,
+                                   "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-b42c2989-stdout.txt",
+                                   "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-b42c2989-stderr.txt"
+                               }
+             },
+    "gpu":  {
+                "name":  "NVIDIA GeForce RTX 4070 Ti",
+                "driver":  "616.56",
+                "memory_total":  "12282 MiB",
+                "memory_used":  "1528 MiB",
+                "memory_free":  "10467 MiB",
+                "query":  {
+                              "exists":  true,
+                              "path":  "C:\\Windows\\system32\\nvidia-smi.exe",
+                              "exit_code":  0,
+                              "timed_out":  false,
+                              "killed_self_child":  false,
+                              "stdout_head":  "NVIDIA GeForce RTX 4070 Ti, 616.56, 12282 MiB, 1528 MiB, 10467 MiB",
+                              "stderr_head":  "",
+                              "duration_ms":  76,
+                              "pid":  18976,
+                              "argv":  [
+                                           "--query-gpu=name,driver_version,memory.total,memory.used,memory.free",
+                                           "--format=csv,noheader"
+                                       ],
+                              "transport_ok":  true,
+                              "error":  null,
+                              "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-405f2be2-stdout.txt",
+                              "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-405f2be2-stderr.txt"
+                          }
+            },
+    "storage":  {
+                    "physical_disks":  [
+                                           {
+                                               "model":  "XPG GAMMIX S50 PRO",
+                                               "size_bytes":  1000202273280,
+                                               "index":  0,
+                                               "media":  "Fixed hard disk media"
+                                           }
+                                       ],
+                    "partitions":  [
+                                       {
+                                           "disk":  0,
+                                           "partition":  1,
+                                           "letter":  "\u0000",
+                                           "size_gib":  0.29
+                                       },
+                                       {
+                                           "disk":  0,
+                                           "partition":  2,
+                                           "letter":  "\u0000",
+                                           "size_gib":  0.02
+                                       },
+                                       {
+                                           "disk":  0,
+                                           "partition":  3,
+                                           "letter":  "C",
+                                           "size_gib":  501.58
+                                       },
+                                       {
+                                           "disk":  0,
+                                           "partition":  4,
+                                           "letter":  "D",
+                                           "size_gib":  429.62
+                                       }
+                                   ],
+                    "logical":  [
+                                    {
+                                        "device":  "C:",
+                                        "volume":  "",
+                                        "size_gib":  501.58,
+                                        "free_gib":  214.74
+                                    },
+                                    {
+                                        "device":  "D:",
+                                        "volume":  "新加卷",
+                                        "size_gib":  429.62,
+                                        "free_gib":  48.32
+                                    }
+                                ],
+                    "note":  "C: and D: are partitions of the same NVMe; splitting work across them does not add independent I/O."
+                },
+    "wsl":  {
+                "wsl_exe_candidates":  [
+                                           {
+                                               "path":  "C:\\Windows\\System32\\wsl.exe",
+                                               "exists":  false
+                                           },
+                                           {
+                                               "path":  "C:\\Windows\\Sysnative\\wsl.exe",
+                                               "exists":  false
+                                           },
+                                           {
+                                               "path":  "C:\\Windows\\SysWOW64\\wsl.exe",
+                                               "exists":  false
+                                           },
+                                           {
+                                               "path":  "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps\\wsl.exe",
+                                               "exists":  false
+                                           }
+                                       ],
+                "any_wsl_exe":  false,
+                "lxss_dir_exists":  true,
+                "wslapi_dll_exists":  false,
+                "optional_features":  [
+                                          {
+                                              "name":  "Microsoft-Windows-Subsystem-Linux",
+                                              "state":  null,
+                                              "restart_needed":  null,
+                                              "query_error":  "The property \u0027State\u0027 cannot be found on this object. Verify that the property exists."
+                                          },
+                                          {
+                                              "name":  "VirtualMachinePlatform",
+                                              "state":  "Enabled",
+                                              "restart_needed":  false,
+                                              "query_error":  null
+                                          },
+                                          {
+                                              "name":  "HypervisorPlatform",
+                                              "state":  "Disabled",
+                                              "restart_needed":  false,
+                                              "query_error":  null
+                                          },
+                                          {
+                                              "name":  "Microsoft-Hyper-V-All",
+                                              "state":  "Enabled",
+                                              "restart_needed":  false,
+                                              "query_error":  null
+                                          }
+                                      ],
+                "dism_microsoft_windows_subsystem_linux":  {
+                                                               "exists":  true,
+                                                               "path":  "C:\\Windows\\System32\\dism.exe",
+                                                               "exit_code":  -2146498548,
+                                                               "timed_out":  false,
+                                                               "killed_self_child":  false,
+                                                               "stdout_head":  "Deployment Image Servicing and Management tool\nVersion: 10.0.26100.1150\n\nImage Version: 10.0.26100.2314\n\n\nError: 0x800f080c\n",
+                                                               "stderr_head":  "",
+                                                               "duration_ms":  164,
+                                                               "pid":  22196,
+                                                               "argv":  [
+                                                                            "/online",
+                                                                            "/Get-FeatureInfo",
+                                                                            "/FeatureName:Microsoft-Windows-Subsystem-Linux"
+                                                                        ],
+                                                               "transport_ok":  true,
+                                                               "error":  null,
+                                                               "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-f548e724-stdout.txt",
+                                                               "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-f548e724-stderr.txt"
+                                                           },
+                "distros":  null,
+                "ready":  false,
+                "gap":  "wsl.exe not present; Microsoft-Windows-Subsystem-Linux optional feature name unknown or query empty on this image. VirtualMachinePlatform=Enabled, Hyper-V-All=Enabled, hypervisorlaunchtype=hypervisorlaunchtype    Auto, HypervisorPresent=True. Official WSL MSI offline install is the next step; missing inbox optional feature is not a permanent block."
+            },
+    "tools":  {
+                  "grok":  {
+                               "exists":  true,
+                               "path":  "C:\\Users\\Administrator\\.grok\\bin\\grok.exe",
+                               "exit_code":  0,
+                               "timed_out":  false,
+                               "killed_self_child":  false,
+                               "stdout_head":  "grok 1.0.13 (5e9a58528b76)",
+                               "stderr_head":  "",
+                               "duration_ms":  32,
+                               "pid":  17628,
+                               "argv":  [
+                                            "--version"
+                                        ],
+                               "transport_ok":  true,
+                               "error":  null,
+                               "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-52d0cdb3-stdout.txt",
+                               "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-52d0cdb3-stderr.txt"
+                           },
+                  "ffmpeg_pinned":  {
+                                        "exists":  true,
+                                        "path":  "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffmpeg.exe",
+                                        "exit_code":  0,
+                                        "timed_out":  false,
+                                        "killed_self_child":  false,
+                                        "stdout_head":  "ffmpeg version 8.1.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with gcc 16.1.0 (Rev2, Built by MSYS2 project)\nconfiguration: --enable-gpl --enable-version3 --enable-shared --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper\nlibavutil",
+                                        "stderr_head":  "",
+                                        "duration_ms":  47,
+                                        "pid":  19116,
+                                        "argv":  [
+                                                     "-version"
+                                                 ],
+                                        "transport_ok":  true,
+                                        "error":  null,
+                                        "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-764bfd73-stdout.txt",
+                                        "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-764bfd73-stderr.txt"
+                                    },
+                  "ffprobe_pinned":  {
+                                         "exists":  true,
+                                         "path":  "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffprobe.exe",
+                                         "exit_code":  0,
+                                         "timed_out":  false,
+                                         "killed_self_child":  false,
+                                         "stdout_head":  "ffprobe version 8.1.2-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers\nbuilt with gcc 16.1.0 (Rev2, Built by MSYS2 project)\nconfiguration: --enable-gpl --enable-version3 --enable-shared --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper\nlibavutil",
+                                         "stderr_head":  "",
+                                         "duration_ms":  42,
+                                         "pid":  27492,
+                                         "argv":  [
+                                                      "-version"
+                                                  ],
+                                         "transport_ok":  true,
+                                         "error":  null,
+                                         "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-98c07244-stdout.txt",
+                                         "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-98c07244-stderr.txt"
+                                     },
+                  "ffmpeg_chocolatey_shim":  {
+                                                 "path":  "C:\\ProgramData\\chocolatey\\bin\\ffmpeg.exe",
+                                                 "exists":  true,
+                                                 "target":  "C:\\ProgramData\\chocolatey\\lib\\ffmpeg\\tools\\ffmpeg\\bin\\ffmpeg.exe",
+                                                 "target_exists":  false,
+                                                 "runnable":  false,
+                                                 "note":  "Shim present; target missing. Do not execute the shim (would fail or hang). Do not use where.exe first hit."
+                                             },
+                  "colmap_on_path":  [
+                                         "INFO: Could not find files for the given pattern(s)."
+                                     ],
+                  "colmap_common_dirs":  {
+                                             "C:\\Program Files\\COLMAP":  false,
+                                             "C:\\COLMAP":  false,
+                                             "D:\\COLMAP":  false
+                                         },
+                  "python_isolated":  {
+                                          "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\gs-control\\Scripts\\python.exe",
+                                          "exists":  true,
+                                          "version":  "Python 3.11.15",
+                                          "query":  {
+                                                        "exists":  true,
+                                                        "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\gs-control\\Scripts\\python.exe",
+                                                        "exit_code":  0,
+                                                        "timed_out":  false,
+                                                        "killed_self_child":  false,
+                                                        "stdout_head":  "Python 3.11.15",
+                                                        "stderr_head":  "",
+                                                        "duration_ms":  25,
+                                                        "pid":  3040,
+                                                        "argv":  [
+                                                                     "-V"
+                                                                 ],
+                                                        "transport_ok":  true,
+                                                        "error":  null,
+                                                        "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-1b8adee5-stdout.txt",
+                                                        "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-1b8adee5-stderr.txt"
+                                                    }
+                                      },
+                  "python_system":  {
+                                        "exists":  true,
+                                        "path":  "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+                                        "exit_code":  0,
+                                        "timed_out":  false,
+                                        "killed_self_child":  false,
+                                        "stdout_head":  "Python 3.12.7",
+                                        "stderr_head":  "",
+                                        "duration_ms":  21,
+                                        "pid":  23432,
+                                        "argv":  [
+                                                     "-V"
+                                                 ],
+                                        "transport_ok":  true,
+                                        "error":  null,
+                                        "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-6ff7807f-stdout.txt",
+                                        "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-6ff7807f-stderr.txt"
+                                    },
+                  "uv":  {
+                             "exists":  true,
+                             "path":  "C:\\Users\\Administrator\\.local\\bin\\uv.exe",
+                             "exit_code":  0,
+                             "timed_out":  false,
+                             "killed_self_child":  false,
+                             "stdout_head":  "uv 0.11.16 (135a36367 2026-05-21 x86_64-pc-windows-msvc)",
+                             "stderr_head":  "",
+                             "duration_ms":  27,
+                             "pid":  28484,
+                             "argv":  [
+                                          "--version"
+                                      ],
+                             "transport_ok":  true,
+                             "error":  null,
+                             "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-92ebfa23-stdout.txt",
+                             "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-92ebfa23-stderr.txt"
+                         },
+                  "nvcc":  {
+                               "exists":  true,
+                               "path":  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v13.2\\bin\\nvcc.exe",
+                               "exit_code":  0,
+                               "timed_out":  false,
+                               "killed_self_child":  false,
+                               "stdout_head":  "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_22:28:55_Pacific_Daylight_Time_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0",
+                               "stderr_head":  "",
+                               "duration_ms":  22,
+                               "pid":  7916,
+                               "argv":  [
+                                            "--version"
+                                        ],
+                               "transport_ok":  true,
+                               "error":  null,
+                               "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-d1a7fca2-stdout.txt",
+                               "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\doctor-scratch\\ver-d1a7fca2-stderr.txt"
+                           }
+              },
+    "policy":  {
+                   "scanned_credential_dirs":  false,
+                   "dumped_environment_variables":  false,
+                   "enabled_windows_features":  false,
+                   "installed_global_packages":  false,
+                   "changed_drivers":  false,
+                   "rebooted":  false,
+                   "killed_only_self_started_children":  true
+               }
+}

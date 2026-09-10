@@ -1,0 +1,17 @@
+{
+    "now_local":  "2026-09-09T20:07:02.8106742+08:00",
+    "now_utc":  "2026-09-09T12:07:02.8137322Z",
+    "msi_bytes":  258985984,
+    "ubuntu_bytes":  91844608,
+    "msi_sha256":  "a3505a50f4cc585551d11d9de824ba4375448d7a68f2e71d3fb315fa986fc754",
+    "sig_status":  "Valid",
+    "sig_subject":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "sig_issuer":  "CN=Microsoft Code Signing PCA 2024, O=Microsoft Corporation, C=US",
+    "sig_thumbprint":  "AB172913A2960A224809EE8A0C371CD47A079B72",
+    "sig_status_message":  "Signature verified.",
+    "head_exit":  0,
+    "range_exit":  0,
+    "head_text":  "HTTP/1.1 200 OK\r\nDate: Wed, 09 Sep 2026 12:07:06 GMT\r\nServer: Apache/2.4.52 (Ubuntu)\r\nLast-Modified: Mon, 09 Mar 2026 14:21:14 GMT\r\nETag: \"157f9b04-64c981d810a80\"\r\nAccept-Ranges: bytes\r\nContent-Length: 360684292\r\n\r\n",
+    "range_headers":  "HTTP/1.1 206 Partial Content\r\nDate: Wed, 09 Sep 2026 12:07:07 GMT\r\nServer: Apache/2.4.52 (Ubuntu)\r\nLast-Modified: Mon, 09 Mar 2026 14:21:14 GMT\r\nETag: \"157f9b04-64c981d810a80\"\r\nAccept-Ranges: bytes\r\nContent-Length: 1\r\nContent-Range: bytes 0-0/360684292\r\n\r\n",
+    "range_body_bytes":  1
+}

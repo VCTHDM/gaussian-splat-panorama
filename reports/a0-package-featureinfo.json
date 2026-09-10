@@ -1,0 +1,15 @@
+﻿{
+    "started":  true,
+    "exists":  true,
+    "path":  "C:/Windows/System32/Dism.exe",
+    "command_line":  "C:/Windows/System32/Dism.exe /Online /Get-FeatureInfo /FeatureName:Microsoft-Windows-Subsystem-Linux /PackageName:Microsoft-Windows-Lxss-Optional-Package~31bf3856ad364e35~amd64~~10.0.26100.2314 /English",
+    "pid":  27876,
+    "exit_code":  0,
+    "timed_out":  false,
+    "killed_self_child":  false,
+    "duration_ms":  228,
+    "stdout_path":  "logs/wsl/a0-package-featureinfo.txt",
+    "stderr_path":  "logs/wsl/a0-package-featureinfo.err",
+    "transport_ok":  true,
+    "error":  null
+}

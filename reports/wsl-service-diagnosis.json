@@ -1,0 +1,180 @@
+{
+  "schema": "gs.wsl.service.diagnosis.v1",
+  "captured_utc": "2026-09-09T12:55:00Z",
+  "captured_local": "2026-09-09T20:55:00+08:00",
+  "verdict": "blocked_missing_iwslsupport",
+  "wsl_usable": false,
+  "sfm_advanced": false,
+  "reboot_required": "unknown",
+  "reboot_would_register_iwslsupport": false,
+  "user_choice_required": true,
+  "next_owner": "codex",
+  "windows": {
+    "product_name_registry": "Windows 10 Pro",
+    "display_version": "24H2",
+    "build": "26100.2314",
+    "build_lab_ex": "26100.1.amd64fre.ge_release.240331-1435",
+    "edition_id": "Professional",
+    "evidence": "logs/wsl/diag-readonly-pass1.json"
+  },
+  "facts": [
+    {
+      "id": "msi_ok",
+      "text": "WSL MSI 2.7.13 msiexec exit 0; wsl.exe --version exit 0 reports 2.7.13.0 on Windows 10.0.26100.2314.",
+      "evidence": ["reports/wsl-install-result.json", "logs/wsl/wsl-version.txt"]
+    },
+    {
+      "id": "service_1058",
+      "text": "WslService StartMode=Auto, State=Stopped, Win32 ExitCode=1058. SCM Event 7023: service cannot be started because it is disabled or has no enabled devices.",
+      "evidence": ["reports/wsl-service-a0-diagnostic.json", "logs/wsl/diag-readonly-pass1.json", "logs/wsl/diag-start-service.json"]
+    },
+    {
+      "id": "start_service_once",
+      "text": "One Start-Service WslService completed in 2391ms: Failed to start service 'WSL Service (WslService)'. After: Stopped, ExitCode=1058, ProcessId=0.",
+      "evidence": ["logs/wsl/diag-start-service.json"]
+    },
+    {
+      "id": "wsl_status_timeout",
+      "text": "After that start attempt, C:\\Program Files\\WSL\\wsl.exe --status produced no output and was killed at 15s. exit_code=unknown.",
+      "evidence": ["logs/wsl/diag-start-service.json"]
+    },
+    {
+      "id": "source_constant",
+      "text": "Official tag 2.7.13 helpers.cpp line 31: c_WslSupportInterfaceKey = L\"Software\\\\Classes\\\\Interface\\\\{46f3c96d-ffa3-42f0-b052-52f5e7ecbb08}\"; line 32 name IWslSupport. IsWslSupportInterfacePresent() opens HKLM that key KEY_READ and returns !!key (lines 481-493).",
+      "evidence": ["logs/wsl/wsl-2.7.13-src/helpers.cpp", "https://github.com/microsoft/WSL/blob/2.7.13/src/windows/common/helpers.cpp"]
+    },
+    {
+      "id": "source_servicemain",
+      "text": "Official tag 2.7.13 ServiceMain.cpp OnServiceStarting() line 174: THROW_HR_IF(HRESULT_FROM_WIN32(ERROR_SERVICE_DISABLED), !IsWslSupportInterfacePresent()). ERROR_SERVICE_DISABLED is Win32 1058. Codex cited lines 158-159; this fetch places the check at 174.",
+      "evidence": ["logs/wsl/wsl-2.7.13-src/ServiceMain.cpp", "https://github.com/microsoft/WSL/blob/2.7.13/src/windows/service/exe/ServiceMain.cpp"]
+    },
+    {
+      "id": "exe_string",
+      "text": "Signed C:\\Program Files\\WSL\\wslservice.exe Unicode string contains Software\\Classes\\Interface\\{46f3c96d-ffa3-42f0-b052-52f5e7ecbb08} (Authenticode Valid, Microsoft Corporation).",
+      "evidence": ["logs/wsl/diag-wslservice-strings.json", "logs/wsl/diag-readonly-pass1.json"]
+    },
+    {
+      "id": "registry_missing",
+      "text": "HKLM\\Software\\Classes\\Interface\\{46f3c96d-ffa3-42f0-b052-52f5e7ecbb08} does not exist (also HKCR and Wow6432Node). Read-only Test-Path=false.",
+      "evidence": ["logs/wsl/diag-readonly-pass1.json"]
+    },
+    {
+      "id": "os_files_missing",
+      "text": "C:\\Windows\\System32\\wsl.exe, wslapi.dll, wslsupport.dll, lxssmanager.dll, drivers\\lxss.sys, lxcore.sys, p9rdr.sys: not present. lxss driver service not present.",
+      "evidence": ["logs/wsl/diag-readonly-pass1.json", "logs/wsl/diag-dism-cbs.json"]
+    },
+    {
+      "id": "winsxs_dcs",
+      "text": "WinSxS amd64 microsoft-windows-lxss-wslsupport ...26100.1 contains wslsupport.dll 2454 bytes, magic 44-43-53 (DCS), mz=false. Manifest is DCM/PA30 577 bytes. Not a PE; cannot be used as a DLL.",
+      "evidence": ["logs/wsl/diag-components.json", "logs/wsl/diag-component-state.json"]
+    },
+    {
+      "id": "package_staged",
+      "text": "DISM /Get-PackageInfo Microsoft-Windows-Lxss-Optional-Package~31bf3856ad364e35~amd64~~10.0.26100.2314 exit 0: 适用=是, 状态=暂存, 发行类型=Feature Pack, 需要重新启动=Possible, 功能 Microsoft-Windows-Subsystem-Linux 状态=已禁用. mum exists at C:\\Windows\\Servicing\\Packages\\...2314.mum (2216 bytes). CBS CurrentState=64 matches 暂存. Install time 2024/11/7 1:18.",
+      "evidence": ["logs/wsl/diag-cbs-compare.json", "logs/wsl/diag-component-state.json"]
+    },
+    {
+      "id": "feature_unknown_catalog",
+      "text": "DISM /Get-FeatureInfo Microsoft-Windows-Subsystem-Linux exit -2146498548, Error 0x800f080c, 功能名称未知. Get-WindowsOptionalFeature same name returns FeatureName=null. No optional feature name matching Linux|Lxss|WSL|Subsystem. Get-WindowsCapability has no WSL/Linux payload.",
+      "evidence": ["logs/wsl/diag-component-state.json", "logs/wsl/diag-dism-cbs.json"]
+    },
+    {
+      "id": "vmp_ok",
+      "text": "VirtualMachinePlatform Enabled, RestartNeeded=false. vmcompute/HNS/SharedAccess/iphlpsvc/Winmgmt/vmms Running.",
+      "evidence": ["logs/wsl/diag-readonly-pass1.json"]
+    },
+    {
+      "id": "dism_checkhealth",
+      "text": "Dism.exe /Online /Cleanup-Image /CheckHealth exit 0, timed_out=false, stdout only reports operation completed successfully (no corruption phrase).",
+      "evidence": ["logs/wsl/dism-checkhealth.json"]
+    },
+    {
+      "id": "no_distro",
+      "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Lxss subkeys=['MSI'] only (InstallLocation=C:\\Program Files\\WSL\\, Version=2.7.13.0). HKCU Lxss absent. env/wsl/GS-Ubuntu2204 exists with 0 files. No duplicate import risk.",
+      "evidence": ["logs/wsl/diag-components.json"]
+    },
+    {
+      "id": "pending_rename_chrome",
+      "text": "PendingFileRenameOperations has 6 entries, all Google Chrome Temp paths. CBS RebootPending=false, WU RebootRequired=false.",
+      "evidence": ["logs/wsl/diag-start-service.json", "logs/wsl/diag-component-state.json"]
+    },
+    {
+      "id": "import_killed",
+      "text": "reports/wsl-install-result.json distro_install kind=from-file exit_code=-1 timed_out=false empty stdout/stderr. Per task: Codex ended wsl import client 26368 (parent 17152) after confirming service stopped and no import progress. This is not a natural installer error and not a new approval denial.",
+      "evidence": ["reports/wsl-install-result.json"]
+    },
+    {
+      "id": "enable_blocked",
+      "text": "This session did not run DISM Enable-Feature/Add-Package. Auto-approval blocked that mutation as system-level servicing requiring explicit approval of the new action.",
+      "evidence": ["reports/wsl-service-recovery-plan.md"]
+    },
+    {
+      "id": "deps_ok",
+      "text": "vmcompute/hns/SharedAccess/iphlpsvc/Winmgmt running as previously reported; Hyper-V-All and Microsoft-Hyper-V Enabled; HypervisorPlatform Disabled.",
+      "evidence": ["logs/wsl/diag-readonly-pass1.json"]
+    }
+  ],
+  "inferences": [
+    {
+      "id": "cause",
+      "text": "WslService stops with 1058 because OnServiceStarting() finds IWslSupport unregistered. The inbox component that would register it (wslsupport.dll / Microsoft-Windows-Subsystem-Linux inside Lxss-Optional-Package) is staged and disabled, not projected into System32.",
+      "based_on": ["source_servicemain", "source_constant", "registry_missing", "package_staged", "os_files_missing"]
+    },
+    {
+      "id": "catalog_vs_package",
+      "text": "Get-FeatureInfo 0x800f080c is consistent with a staged-only package: the feature exists inside the package (Disabled) but is not in the live optional-feature catalog until the package is installed/enabled.",
+      "based_on": ["package_staged", "feature_unknown_catalog"]
+    },
+    {
+      "id": "reboot_not_sufficient",
+      "text": "A reboot alone is not expected to create the missing HKLM interface key or expand DCS payloads. No WSL pending file rename; no CBS/WU reboot-pending flag.",
+      "based_on": ["registry_missing", "pending_rename_chrome", "winsxs_dcs"]
+    },
+    {
+      "id": "currentstate_64",
+      "text": "CBS CurrentState 64 for Lxss-Optional matches DISM 状态=暂存. Enabled VMP package 26100.2314 is CurrentState 112.",
+      "based_on": ["package_staged", "logs/wsl/diag-cbs-compare.json"]
+    }
+  ],
+  "unverified": [
+    {
+      "id": "scanhealth",
+      "text": "DISM ScanHealth not run. CheckHealth did not flag a pre-existing repair-needed state. Missing staged feature is not the same as component-store corruption.",
+      "status": "not_run"
+    },
+    {
+      "id": "enable_exit",
+      "text": "Exit code of Enable-Feature / Add-Package for the staged Lxss-Optional package is unknown (command not executed).",
+      "status": "unknown"
+    },
+    {
+      "id": "enable_reboot",
+      "text": "DISM packageinfo says 需要重新启动=Possible. Actual reboot need after enable is unknown.",
+      "status": "unknown"
+    },
+    {
+      "id": "dcs_expand",
+      "text": "Whether the 2454-byte DCS wslsupport.dll can be expanded from this image without an ISO source is unknown. Enable may fail with source-not-found / assembly-missing.",
+      "status": "unknown"
+    },
+    {
+      "id": "servicemain_line_shift",
+      "text": "Why Codex cited ServiceMain.cpp 158-159 vs this 2.7.13 fetch at 174 is unverified (possible different checkout/preprocessor). The THROW_HR_IF check itself is present."
+    }
+  ],
+  "forbidden_not_done": [
+    "msiexec reinstall",
+    "Ubuntu re-download",
+    "fabricate IWslSupport registry key",
+    "copy DCS stub as System32 wslsupport.dll",
+    "DISM RestoreHealth",
+    "auto reboot",
+    "driver change",
+    "ISO / other Windows version install",
+    "SfM"
+  ],
+  "script_fix": {
+    "path": "scripts/install-wsl-offline.ps1",
+    "change": "If WslService is not Running, skip distro import and exit 23. wsl --list timeouts 15s. No 900s wait when service is down."
+  }
+}

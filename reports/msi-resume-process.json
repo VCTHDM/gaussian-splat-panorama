@@ -1,0 +1,15 @@
+﻿{
+    "started":  true,
+    "exists":  true,
+    "path":  "C:\\Windows\\System32\\curl.exe",
+    "command_line":  "C:\\Windows\\System32\\curl.exe -L --fail --connect-timeout 30 --max-time 1800 --speed-time 120 --speed-limit 1024 --retry 1 --retry-delay 3 -C - --output C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\wsl.2.7.13.0.x64.msi https://github.com/microsoft/WSL/releases/download/2.7.13/wsl.2.7.13.0.x64.msi",
+    "pid":  19572,
+    "exit_code":  0,
+    "timed_out":  false,
+    "killed_self_child":  false,
+    "duration_ms":  196574,
+    "stdout_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\msi-resume.stdout.log",
+    "stderr_path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\msi-resume.stderr.log",
+    "transport_ok":  true,
+    "error":  null
+}

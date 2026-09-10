@@ -1,0 +1,26 @@
+﻿{
+    "schema":  "gs.offline.ready.v1",
+    "created_local":  "2026-09-09T20:25:52.3125055+08:00",
+    "status":  "ready_for_install_approval",
+    "reviewer":  "Codex A0",
+    "msiexec_ran":  false,
+    "distro_registered":  false,
+    "rebooted":  false,
+    "artifacts":  [
+                      {
+                          "signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+                          "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\wsl.2.7.13.0.x64.msi",
+                          "sha256":  "a3505a50f4cc585551d11d9de824ba4375448d7a68f2e71d3fb315fa986fc754",
+                          "bytes":  258985984,
+                          "signature_status":  "Valid"
+                      },
+                      {
+                          "path":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl",
+                          "sha256":  "4499c4fe257f2fc83145b429ce211a0a43fd590e70d6261ede616210947d9f8f",
+                          "bytes":  360684292
+                      }
+                  ],
+    "install_plan":  "reports/wsl-install-plan.md",
+    "approval_required":  true,
+    "approval_reason":  "Grok auto mode rejected system-wide installation of downloaded WSL/Ubuntu code; explicit user confirmation pending."
+}

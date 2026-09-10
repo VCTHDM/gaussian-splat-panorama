@@ -1,0 +1,74 @@
+{
+  "schema": "gs.stage.handoff.v1",
+  "job_id": "bootstrap-01",
+  "stage": "01-bootstrap",
+  "status": "completed_in_later_session_after_hang",
+  "next_owner": "grok",
+  "created_utc": "2026-09-09T11:40:00Z",
+  "bootstrap_grok_process": {
+    "claimed_exit_0": false,
+    "do_not_fake_success": true,
+    "original_session_id": "01a085cc-ed89-7ed2-844f-216a9b0cbc79",
+    "original_outcome": "hung_then_killed",
+    "hang_point": "scripts/doctor-env.ps1 Exe-Version([string]$Path,[string[]]$Args) used PowerShell automatic variable $Args; --version was dropped; grok.exe pid 22168 command line was only grok.exe and opened the interactive UI",
+    "resume_attempt": {
+      "session_id": "01a085cc-ed89-7ed2-844f-216a9b0cbc79",
+      "result": "session_create exceeded ~3 minutes with no new events; resume stopped",
+      "verified": false
+    },
+    "continuation": "new session read files; resume remains unverified. Default = new session + stage task file."
+  },
+  "doctor": {
+    "script": "scripts/doctor-env.ps1",
+    "report": "reports/env-doctor.json",
+    "fix": "parameter renamed to VersionArgs; version queries timeout 15s; DISM timeout 60s; only self-started children killed",
+    "grok_version": {
+      "argv": ["--version"],
+      "stdout_head": "grok 1.0.13 (5e9a58528b76)",
+      "exit_code": 0,
+      "timed_out": false
+    },
+    "dism_microsoft_windows_subsystem_linux": {
+      "exit_code": -2146498548,
+      "hex": "0x800f080c",
+      "meaning": "feature name unknown on this image; not treated as permanent block"
+    },
+    "virtual_machine_platform": "Enabled",
+    "hypervisorlaunchtype": "Auto",
+    "wsl_exe_present": false,
+    "ffmpeg_pinned": "8.1.2 Gyan.FFmpeg.Shared",
+    "chocolatey_ffmpeg_shim": "not runnable; target missing",
+    "python_isolated": "Python 3.11.15 env/gs-control",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti driver 616.56 12282 MiB",
+    "scanned_credential_dirs": false,
+    "dumped_environment_variables": false
+  },
+  "inputs": {
+    "reused_existing_shortest_pilot": true,
+    "full_rescan_not_repeated": true,
+    "selected": "全景素材/f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+    "duration_sec": 47.594944,
+    "sha256": "95c670dfa5ddd1659cf01d4c6da8d44feda6762ad3c8d9b97c437a00a9053a1b",
+    "pts": {
+      "parser": "ffprobe -show_frames json",
+      "frame_rows": 476,
+      "pts_first": 0.0,
+      "pts_last": 47.494967,
+      "negative_or_zero_dt": 0,
+      "acceptance_passed": true
+    },
+    "projection": "equirectangular visual hypothesis; camera calibration unknown; 美碳v3 / mentech PanoX V3 on sibling 3840x1920 files"
+  },
+  "original_videos_preserved": true,
+  "uploaded": false,
+  "outputs": [
+    "reports/env-doctor.json",
+    "docs/Grok调用指南.md",
+    "jobs/shortest-pilot/"
+  ],
+  "issues": [
+    "Original bootstrap Grok process did not exit 0.",
+    "WSL not installed at bootstrap time.",
+    "COLMAP not present."
+  ]
+}

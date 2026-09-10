@@ -1,0 +1,18 @@
+﻿{
+    "reviewed_utc":  "2026-09-09T13:07:14.5771769Z",
+    "feature":  "Microsoft-Windows-Subsystem-Linux",
+    "scoped_featureinfo_exit_code":  0,
+    "feature_state":  "Enabled",
+    "cbs_reboot_pending":  true,
+    "iwslsupport_present":  false,
+    "reboot_required":  true,
+    "reboot_performed":  false,
+    "enable_client_exit_code":  null,
+    "enable_client_exit_note":  "Host/client disappeared before exit code was saved; do not invent 3010 or rerun enable. CBS session finalized S_OK with reboot required yes, independently verified feature Enabled.",
+    "evidence":  [
+                     "logs/wsl/a0-after-enable-featureinfo.txt",
+                     "logs/wsl/a0-enable-cbs-evidence.txt",
+                     "logs/wsl/enable-feature-process.json"
+                 ],
+    "next_step":  "Manual Windows restart, then verify IWslSupport and WslService, import existing Ubuntu image if no distro yet. No MSI reinstall, download, or repeat feature enable."
+}

@@ -1,0 +1,70 @@
+﻿{
+    "schema":  "gs.stage.handoff.v1",
+    "job_id":  "shortest-pilot",
+    "stage":  "bootstrap_and_offline_environment",
+    "created_local":  "2026-09-09T20:25:52.3125055+08:00",
+    "status":  "enabled_reboot_required",
+    "next_owner":  "user_restart_then_codex",
+    "execution_route":  "Codex architecture/dispatch/QA; Grok implementation and execution; local processes for long work; Codex fallback for hung or exhausted Grok sessions",
+    "input":  {
+                  "width":  1280,
+                  "height":  640,
+                  "selected_keyframes":  64,
+                  "decoded_frames":  476,
+                  "video":  "全景素材/f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+                  "source_sha256":  "95c670dfa5ddd1659cf01d4c6da8d44feda6762ad3c8d9b97c437a00a9053a1b",
+                  "duration_sec":  47.594944,
+                  "source_hash_unchanged":  true,
+                  "pts_strictly_increasing":  true
+              },
+    "checks_passed":  [
+                          "full_shortest_video_decode",
+                          "476_named_PTS_no_nonpositive_delta",
+                          "64_window_selected_keyframes",
+                          "25_wrapper_stub_tests",
+                          "real_CMD_GROK_WRAPPER_OK_exit0_end_turn",
+                          "MSI_exact_SHA256_and_valid_Microsoft_signature",
+                          "final_Ubuntu_file_exact_SHA256"
+                      ],
+    "not_completed":  [
+                          "12_view_overlapping_fixed_rig",
+                          "COLMAP_SfM",
+                          "PGSR_training",
+                          "geometry_fusion",
+                          "model_viewer"
+                      ],
+    "environment_installed":  false,
+    "grok_sessions":  [
+                          {
+                              "business_complete":  false,
+                              "id":  "01a085e0-d3cc-7c61-8527-f54af714ad81",
+                              "stop_reason":  "cancelled",
+                              "process_exit_code":  0
+                          },
+                          {
+                              "stderr_reason":  "Error: max turns reached",
+                              "business_complete":  false,
+                              "id":  "01a0860c-4ee0-7be2-897f-c3d6b8184078",
+                              "stop_reason":  "cancelled",
+                              "process_exit_code":  1
+                          }
+                      ],
+    "a0_completion":  "Verified local download continuation and completed offline acceptance; no installation executed",
+    "approval_action":  "Install verified WSL 2.7.13 stable MSI with /norestart and create dedicated Ubuntu 22.04 GS-Ubuntu2204 in env/wsl; no automatic reboot, no driver replacement",
+    "outputs":  [
+                    "docs/Grok调用指南.md",
+                    "docs/Grok-CMD补充.md",
+                    "reports/首轮试跑报告.md",
+                    "reports/offline-ready.json",
+                    "reports/wsl-install-plan.md",
+                    "jobs/shortest-pilot/sfm-prep/keyframes.csv"
+                ],
+    "limitations":  [
+                        "1280x640 pilot is not 8K footage",
+                        "camera calibration and export/stabilization settings unknown",
+                        "no measured control points or metric accuracy",
+                        "4-direction previews are not the planned 12-view SfM rig"
+                    ],
+    "current_handoff":  "reports/wsl-install-handoff.json",
+    "superseded_offline_install_gate":  "MSI installed, component enable approved and executed. Current blocker is required Windows restart, not approval."
+}

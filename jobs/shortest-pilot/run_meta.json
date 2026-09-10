@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-09T11:08:10.570332+00:00",
+  "ended_utc": "2026-09-09T11:08:14.643620+00:00",
+  "python": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\gs-control\\Scripts\\python.exe",
+  "python_version": "3.11.15 (main, Jun 11 2026, 04:59:07) [MSC v.1944 64 bit (AMD64)]",
+  "opencv": "5.0.0",
+  "numpy": "2.4.6",
+  "ffmpeg": "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffmpeg.exe",
+  "ffprobe": "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffprobe.exe",
+  "source_readonly": true,
+  "uploaded": false,
+  "max_seconds": 90.0,
+  "processed_seconds": 47.594944,
+  "selected": "f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+  "decode_exit_code": 0,
+  "pts_exit_code": 0
+}

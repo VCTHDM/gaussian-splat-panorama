@@ -1,0 +1,42 @@
+{
+  "schema": "gs.cmd.entry.fix.v1",
+  "created_utc": "2026-09-09T11:41:10Z",
+  "stub_not_used": true,
+  "root_cause": "invoke-grok.cmd was LF-only; chcp 65001 then ate first bytes of later lines, producing 'ensions'/'t'/'cho'/'voke-grok.cmd' is not recognized and exit 1 before Grok started.",
+  "fix": {
+    "file": "scripts/invoke-grok.cmd",
+    "encoding": "ASCII no BOM",
+    "newlines": "CRLF",
+    "chcp_removed": true,
+    "setlocal": "EnableExtensions DisableDelayedExpansion",
+    "empty_resume": "omit -ResumeSessionId (PowerShell 5.1 empty-string shift)",
+    "invoke": "call powershell.exe then exit /b %ERRORLEVEL%",
+    "path": "%~dp0 supports Chinese directories"
+  },
+  "usage": {
+    "command": "cmd.exe /d /c \"scripts\\invoke-grok.cmd\"",
+    "exit_code": 2,
+    "stdout": "Usage: invoke-grok.cmd TASK_FILE [RESUME_SESSION_ID] [MAX_TURNS]"
+  },
+  "probe": {
+    "command": "cmd.exe /d /c 'scripts\\invoke-grok.cmd \".grok-tasks\\wrapper-smoke.md\" \"\" 1'",
+    "exit_code": 0,
+    "wrapper_exit_code": 0,
+    "grok_exit_code": 0,
+    "status": "ok",
+    "transport_ok": true,
+    "business_ok": true,
+    "stop_reason": "end_turn",
+    "normal_stop": true,
+    "session_id": "01a085f8-8ea8-7460-ac3e-b11a83b2c3db",
+    "exact_marker": "GROK_WRAPPER_OK",
+    "marker_match": true,
+    "num_turns": 1,
+    "resume_session_id_set": false,
+    "max_turns": 1,
+    "job_id": "grok-wrapper-smoke-20260909-194053735-7a70d00c",
+    "raw_json": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\grok-wrapper-smoke-20260909-194053735-7a70d00c\\grok-stdout.json",
+    "handoff": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\grok-wrapper-smoke-20260909-194053735-7a70d00c\\handoff.json",
+    "text": "GROK_WRAPPER_OK"
+  }
+}

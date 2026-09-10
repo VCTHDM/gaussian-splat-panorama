@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffmpeg.exe",
+    "-hide_banner",
+    "-v",
+    "info",
+    "-xerror",
+    "-i",
+    "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+    "-t",
+    "47.594944",
+    "-map",
+    "0:v:0",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit_code": 0,
+  "decoded_ok": true,
+  "reported_frame_count": 476,
+  "error_lines": [],
+  "stderr_tail": "[in#0 @ 000001e85bf66740] Skipping unhandled metadata com.video.file.type of type 67\nInput #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\f640ef4cc3c8cbda0df51f7eb2d79368.mp4':\n  Metadata:\n    major_brand     : mp42\n    minor_version   : 0\n    compatible_brands: isommp42\n    creation_time   : 2026-09-06T10:16:09.000000Z\n    com.android.version: 16\n  Duration: 00:00:47.59, start: 0.000000, bitrate: 2640 kb/s\n  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 95 kb/s (default)\n    Metadata:\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : SoundHandle\n  Stream #0:1[0x2](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt470bg/bt709, progressive), 1280x640, 2542 kb/s, 10 fps, 10 tbr, 90k tbn (default)\n    Metadata:\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\nStream mapping:\n  Stream #0:1 -> #0:0 (h264 (native) -> wrapped_avframe (native))\nPress [q] to stop, [?] for help\nOutput #0, null, to 'pipe:':\n  Metadata:\n    major_brand     : mp42\n    minor_version   : 0\n    compatible_brands: isommp42\n    com.android.version: 16\n    encoder         : Lavf62.12.102\n  Stream #0:0(eng): Video: wrapped_avframe, yuv420p(tv, bt470bg/bt470bg/smpte170m, progressive), 1280x640, q=2-31, 200 kb/s, 10 fps, 10 tbn (default)\n    Metadata:\n      encoder         : Lavc62.28.102 wrapped_avframe\n      creation_time   : 2026-09-06T10:16:09.000000Z\n      handler_name    : VideoHandle\n[out#0/null @ 000001e85bfc4080] video:197KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=  476 fps=0.0 q=-0.0 Lsize=N/A time=00:00:47.60 bitrate=N/A speed= 147x elapsed=0:00:00.32    \n",
+  "clip_seconds": 47.594944
+}

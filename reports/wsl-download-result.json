@@ -1,0 +1,19 @@
+{
+    "schema":  "gs.wsl.download.v1",
+    "started_utc":  "2026-09-09T11:36:09.4399364Z",
+    "msiexec_ran":  false,
+    "items":  [
+                  {
+                      "name":  "wsl.2.7.13.0.x64.msi",
+                      "ok":  false,
+                      "error":  "curl exit=-1 timeout=True"
+                  },
+                  {
+                      "name":  "ubuntu-22.04.5-wsl-amd64.wsl",
+                      "ok":  false,
+                      "error":  "curl exit=-1 timeout=True"
+                  }
+              ],
+    "ended_utc":  "2026-09-09T11:56:09.6249961Z",
+    "all_ok":  false
+}

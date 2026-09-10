@@ -1,0 +1,50 @@
+{
+  "verdict": "2_1_candidate_not_proven_equirectangular",
+  "is_proven_stitched_equirectangular": false,
+  "hard_apply_panorama_rig": false,
+  "evidence": {
+    "width": 1280,
+    "height": 640,
+    "aspect_w_over_h": 2.0,
+    "within_2_1_tolerance": true,
+    "ffprobe_spherical_or_equirect_tags": false,
+    "format_tags": {
+      "major_brand": "mp42",
+      "minor_version": "0",
+      "compatible_brands": "isommp42",
+      "creation_time": "2026-09-06T10:16:09.000000Z",
+      "com.android.version": "16"
+    },
+    "camera_make": null,
+    "camera_model": null,
+    "android_version_tag": "16",
+    "left_right_wrap_mae_mean": 14.742280960083008,
+    "preview_paths": [
+      "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_00_t0.000s.jpg",
+      "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_01_t11.899s.jpg",
+      "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_02_t23.797s.jpg",
+      "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_03_t35.696s.jpg",
+      "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_04_t47.395s.jpg"
+    ],
+    "local_visual_notes": [
+      "Previews show curved ground, horizon, and a split camera/operator blob on the bottom edge (typical nadir).",
+      "Left and right edges continue the same nadir object, consistent with wraparound.",
+      "Sky contains arc-like stitch artifacts. This is content evidence, not a metadata proof."
+    ]
+  },
+  "interpretation": "A 2:1 pixel ratio is a candidate for equirectangular panorama, not proof. This selected file has no spherical / equirect metadata in ffprobe. Local previews are consistent with a stitched 360 frame plus nadir camera body, but that still does not mathematically prove a single-center equirectangular model. Do not hard-apply a 12-view panorama Rig in this stage.",
+  "related_files_note": "Sibling files video_20260906_180959.mp4 and video_20260906_181540.mp4 carry mentech / PanoX V3 tags at 3840x1920. That is camera-origin evidence for those files only, and still does not mathematically prove a stitched 2:1 equirect.",
+  "pilot_assumption": "equirectangular_visual_not_calibrated",
+  "visual_evidence": {
+    "preview_used": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\previews\\frame_01_t11.899s.jpg",
+    "observed": [
+      "Full spherical unwrap: sky/pole stretch at top, operator/pole/camera body unwrapped at bottom.",
+      "Left and right edges continue the same paved ground and nadir object (wraparound).",
+      "Trees, ground, buildings, and moving pedestrians are present."
+    ],
+    "camera_user_note": "用户补充（2026-09-09）：相机为“美碳v3”。原话如此，尚未确认拼接/防抖/导出设置或高分辨率原片是否可取得。\n已有文件证据：video_20260906_180959.mp4 与 video_20260906_181540.mp4 元数据为 mentech / PanoX V3，3840x1920。最短文件是1280x640的另一个导出版本，不得自动视为原始8K素材。\n当前架构决定：继续最短片流程验证，相机标定和拼接设置保持unknown；视觉检查支持equirectangular试跑假设。不把尚未取得相机设置当作输入阶段阻塞。",
+    "intrinsics": "unknown",
+    "allowed_for_shortest_pilot": true,
+    "do_not_block_on_user_proof": true
+  }
+}

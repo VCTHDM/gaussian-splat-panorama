@@ -1,0 +1,14 @@
+﻿{
+    "status":  "paused_by_user",
+    "reason":  "User requested TODO and progress checkpoint because quota is exhausted",
+    "paused_at":  "2026-09-09T21:40:51.0235056+08:00",
+    "grok_pid":  22152,
+    "grok_stopped":  true,
+    "wrapper_exit_code":  1,
+    "wrapper_process_exit_code":  -1,
+    "wrapper_failure_explanation":  "A0 intentionally stopped the verified task Grok process for user quota pause; not a new approval denial or natural SfM failure",
+    "sfm_complete":  false,
+    "training_complete":  false,
+    "checkpoint":  "TODO与进度.md",
+    "next_stage":  "inspect_and_finish_sfm_dependencies"
+}

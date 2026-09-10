@@ -1,0 +1,228 @@
+{
+  "sampled_frames": 23,
+  "laplacian_var": {
+    "mean": 3493.7245782316218,
+    "median": 3031.558980007754,
+    "p10": 2754.2408895469557,
+    "p90": 4809.683901165935,
+    "min": 2180.487813053988,
+    "max": 8690.458395736068
+  },
+  "luma_mean": {
+    "mean": 92.53743482506793,
+    "min": 70.91896728515626,
+    "max": 100.31690307617187
+  },
+  "underexposed_fraction_mean": 0.18209732719089675,
+  "overexposed_fraction_mean": 0.15457869819972825,
+  "consecutive_proxy_mad": {
+    "mean": 24.27832386710427,
+    "median": 23.274765968322754,
+    "min": 18.278905868530273,
+    "near_static_fraction_mad_lt_2": 0.0
+  },
+  "left_right_wrap_mae_0_255": {
+    "mean": 14.742280960083008,
+    "median": 13.192578315734863,
+    "note": "Low value is consistent with wraparound or with similar edge content; not proof of equirectangular."
+  },
+  "pole_band_std": {
+    "top_mean": 22.82197087744008,
+    "mid_mean": 28.15092891195546,
+    "bottom_mean": 34.15609683161197,
+    "note": "Equirect often has lower spatial detail near poles; heuristic only."
+  },
+  "requested_time_sec": [
+    0.0,
+    2.069345391304348,
+    4.138690782608696,
+    6.208036173913043,
+    8.277381565217391,
+    10.346726956521739,
+    12.416072347826086,
+    14.485417739130435,
+    16.554763130434782,
+    18.624108521739128,
+    20.693453913043477,
+    22.762799304347826,
+    24.832144695652172,
+    26.901490086956517,
+    28.97083547826087,
+    31.04018086956522,
+    33.109526260869565,
+    35.17887165217391,
+    37.248217043478256,
+    39.31756243478261,
+    41.386907826086954,
+    43.4562532173913,
+    45.52559860869565
+  ],
+  "actual_pts_sec": [
+    0.0,
+    2.099833,
+    4.0997,
+    6.199467,
+    8.299233,
+    10.299256,
+    12.3989,
+    14.498456,
+    16.598322,
+    18.598222,
+    20.698389,
+    22.797833,
+    24.797567,
+    26.897867,
+    28.9971,
+    30.9968,
+    33.096689,
+    35.196478,
+    37.296333,
+    39.296111,
+    41.395878,
+    43.495633,
+    45.495367
+  ],
+  "source_frame_index": [
+    0,
+    21,
+    41,
+    62,
+    83,
+    103,
+    124,
+    145,
+    166,
+    186,
+    207,
+    228,
+    248,
+    269,
+    290,
+    310,
+    331,
+    352,
+    373,
+    393,
+    414,
+    435,
+    455
+  ],
+  "samples": [
+    {
+      "requested_time_sec": 0.0,
+      "actual_pts_sec": 0.0,
+      "source_frame_index": 0
+    },
+    {
+      "requested_time_sec": 2.069345391304348,
+      "actual_pts_sec": 2.099833,
+      "source_frame_index": 21
+    },
+    {
+      "requested_time_sec": 4.138690782608696,
+      "actual_pts_sec": 4.0997,
+      "source_frame_index": 41
+    },
+    {
+      "requested_time_sec": 6.208036173913043,
+      "actual_pts_sec": 6.199467,
+      "source_frame_index": 62
+    },
+    {
+      "requested_time_sec": 8.277381565217391,
+      "actual_pts_sec": 8.299233,
+      "source_frame_index": 83
+    },
+    {
+      "requested_time_sec": 10.346726956521739,
+      "actual_pts_sec": 10.299256,
+      "source_frame_index": 103
+    },
+    {
+      "requested_time_sec": 12.416072347826086,
+      "actual_pts_sec": 12.3989,
+      "source_frame_index": 124
+    },
+    {
+      "requested_time_sec": 14.485417739130435,
+      "actual_pts_sec": 14.498456,
+      "source_frame_index": 145
+    },
+    {
+      "requested_time_sec": 16.554763130434782,
+      "actual_pts_sec": 16.598322,
+      "source_frame_index": 166
+    },
+    {
+      "requested_time_sec": 18.624108521739128,
+      "actual_pts_sec": 18.598222,
+      "source_frame_index": 186
+    },
+    {
+      "requested_time_sec": 20.693453913043477,
+      "actual_pts_sec": 20.698389,
+      "source_frame_index": 207
+    },
+    {
+      "requested_time_sec": 22.762799304347826,
+      "actual_pts_sec": 22.797833,
+      "source_frame_index": 228
+    },
+    {
+      "requested_time_sec": 24.832144695652172,
+      "actual_pts_sec": 24.797567,
+      "source_frame_index": 248
+    },
+    {
+      "requested_time_sec": 26.901490086956517,
+      "actual_pts_sec": 26.897867,
+      "source_frame_index": 269
+    },
+    {
+      "requested_time_sec": 28.97083547826087,
+      "actual_pts_sec": 28.9971,
+      "source_frame_index": 290
+    },
+    {
+      "requested_time_sec": 31.04018086956522,
+      "actual_pts_sec": 30.9968,
+      "source_frame_index": 310
+    },
+    {
+      "requested_time_sec": 33.109526260869565,
+      "actual_pts_sec": 33.096689,
+      "source_frame_index": 331
+    },
+    {
+      "requested_time_sec": 35.17887165217391,
+      "actual_pts_sec": 35.196478,
+      "source_frame_index": 352
+    },
+    {
+      "requested_time_sec": 37.248217043478256,
+      "actual_pts_sec": 37.296333,
+      "source_frame_index": 373
+    },
+    {
+      "requested_time_sec": 39.31756243478261,
+      "actual_pts_sec": 39.296111,
+      "source_frame_index": 393
+    },
+    {
+      "requested_time_sec": 41.386907826086954,
+      "actual_pts_sec": 41.395878,
+      "source_frame_index": 414
+    },
+    {
+      "requested_time_sec": 43.4562532173913,
+      "actual_pts_sec": 43.495633,
+      "source_frame_index": 435
+    },
+    {
+      "requested_time_sec": 45.52559860869565,
+      "actual_pts_sec": 45.495367,
+      "source_frame_index": 455
+    }
+  ],
+  "sample_pts_sec_note": "sample_pts_sec was linspace requested times, not verified frame PTS. Renamed to requested_time_sec; actual_pts_sec is nearest ffprobe PTS."
+}

@@ -1,0 +1,24 @@
+{
+  "updated_utc": "2026-09-10",
+  "notes": [
+    "PATH 中的 Chocolatey ffmpeg/ffprobe shim 目标文件缺失，禁止用 where.exe 的第一个结果。",
+    "下列路径为本机已实测可运行的 WinGet Gyan.FFmpeg.Shared 8.1.2，不另下载副本。",
+    "Windows 无 COLMAP；SfM 用 WSL /opt/gs/env/gs-sfm 的 pycolmap 4.2.0。",
+    "PGSR 训练用 WSL /opt/gs/env/pgsr 的 torch 2.4.1+cu124，不要用 Windows nvcc 13.2。",
+    "本文件不含凭据。不要把 API 密钥、token 写入此文件。"
+  ],
+  "grok_exe": "C:\\Users\\Administrator\\.grok\\bin\\grok.exe",
+  "grok_version_verified": "1.0.13 (5e9a58528b76)",
+  "ffmpeg": "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffmpeg.exe",
+  "ffprobe": "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.2-full_build-shared\\bin\\ffprobe.exe",
+  "python_isolated": "env\\gs-control\\Scripts\\python.exe",
+  "colmap": null,
+  "wsl_exe": "C:\\Program Files\\WSL\\wsl.exe",
+  "wsl_version_verified": "2.7.13.0",
+  "wsl_distro": "GS-Ubuntu2204",
+  "linux_sfm_python": "/opt/gs/env/gs-sfm/bin/python",
+  "linux_pgsr_python": "/opt/gs/env/pgsr/bin/python",
+  "linux_cuda_home": "/usr/local/cuda-12.4",
+  "linux_pgsr_src": "/opt/gs/vendor/PGSR",
+  "blender": "C:\\Program Files\\Blender Foundation\\Blender 5.1\\blender.exe"
+}

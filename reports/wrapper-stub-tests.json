@@ -1,0 +1,135 @@
+{
+    "created_utc":  "2026-09-09T12:43:27.8210961Z",
+    "failed":  0,
+    "passed":  25,
+    "total":  25,
+    "results":  [
+                    {
+                        "name":  "quote-plain",
+                        "ok":  true,
+                        "detail":  "foo"
+                    },
+                    {
+                        "name":  "quote-space",
+                        "ok":  true,
+                        "detail":  "\"a b\""
+                    },
+                    {
+                        "name":  "quote-empty",
+                        "ok":  true,
+                        "detail":  "\"\""
+                    },
+                    {
+                        "name":  "quote-trailing-slash",
+                        "ok":  true,
+                        "detail":  "\"C:\\path with space\\\\\""
+                    },
+                    {
+                        "name":  "quote-inner-quote",
+                        "ok":  true,
+                        "detail":  "\"say \\\"hi\\\"\""
+                    },
+                    {
+                        "name":  "quote-slash-then-quote",
+                        "ok":  true,
+                        "detail":  "\"dir\\\\\\\"x\""
+                    },
+                    {
+                        "name":  "end_turn-wrapper-exit0",
+                        "ok":  true,
+                        "detail":  "exit=0"
+                    },
+                    {
+                        "name":  "end_turn-status-ok",
+                        "ok":  true,
+                        "detail":  "status=ok business=True transport=True"
+                    },
+                    {
+                        "name":  "end_turn-stdout-captured",
+                        "ok":  true,
+                        "detail":  "len=147"
+                    },
+                    {
+                        "name":  "end_turn-stderr-captured",
+                        "ok":  true,
+                        "detail":  "stderr=stub-stderr end_turn\n"
+                    },
+                    {
+                        "name":  "end_turn-max-turns-arg",
+                        "ok":  true,
+                        "detail":  "--prompt-file\nC:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\路径 with space\\任务.md\n--max-turns\n3\n--no-subagents\n--permission-mode\nauto\n--output-format\njson\n--cwd\nC:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\路径 with space\\"
+                    },
+                    {
+                        "name":  "end_turn-cn-task",
+                        "ok":  true,
+                        "detail":  "--prompt-file\nC:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\路径 with space\\任务.md\n--max-turns\n3\n--no-subagents\n--permission-mode\nauto\n--output-format\njson\n--cwd\nC:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\路径 with space\\"
+                    },
+                    {
+                        "name":  "end_turn-cwd-backslash-survived",
+                        "ok":  true,
+                        "detail":  "--prompt-file\nC:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\路径 with space\\任务.md\n--max-turns\n3\n--no-subagents\n--permission-mode\nauto\n--output-format\njson\n--cwd\nC:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\路径 with space\\"
+                    },
+                    {
+                        "name":  "nonzero-wrapper-exit1",
+                        "ok":  true,
+                        "detail":  "exit=1"
+                    },
+                    {
+                        "name":  "nonzero-status-failed",
+                        "ok":  true,
+                        "detail":  "status=failed"
+                    },
+                    {
+                        "name":  "nonzero-transport-ok-business-fail",
+                        "ok":  true,
+                        "detail":  "transport=True grok_exit=7"
+                    },
+                    {
+                        "name":  "empty-failed",
+                        "ok":  true,
+                        "detail":  "exit=1 status=failed"
+                    },
+                    {
+                        "name":  "empty-parse-error",
+                        "ok":  true,
+                        "detail":  "[string]@{name=empty; wrapper_exit=1; handoff=; stdout_file=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-empty-517cf508\\grok-stdout.json; stderr_file=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-empty-517cf508\\grok-stderr.log; stub_argv=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-empty\\stub-capture\\stub-argv.txt; stub_cmd=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-empty\\stub-capture\\stub-commandline.txt; out_dir_used=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-empty-517cf508}.handoff.json_parse_error"
+                    },
+                    {
+                        "name":  "max_turns-incomplete",
+                        "ok":  true,
+                        "detail":  "exit=2 status=incomplete"
+                    },
+                    {
+                        "name":  "max_turns-not-ok",
+                        "ok":  true,
+                        "detail":  "business=False"
+                    },
+                    {
+                        "name":  "unknown-needs-review",
+                        "ok":  true,
+                        "detail":  "exit=3 status=needs_review"
+                    },
+                    {
+                        "name":  "unknown-not-success",
+                        "ok":  true,
+                        "detail":  "business=False"
+                    },
+                    {
+                        "name":  "collide-second-not-overwrite",
+                        "ok":  true,
+                        "detail":  "first=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-collide-92866dcc\\grok-stdout.json second=C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests\\case-collide-e995b3e1\\grok-stdout.json"
+                    },
+                    {
+                        "name":  "psi-Environment-property-exists",
+                        "ok":  true,
+                        "detail":  "Environment=True EnvironmentVariables=True"
+                    },
+                    {
+                        "name":  "wrapper-does-not-assign-Environment",
+                        "ok":  true,
+                        "detail":  "invoke-grok.ps1 does not touch ProcessStartInfo.Environment"
+                    }
+                ],
+    "stub_exe":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\scripts\\tests\\grok-cli-stub.exe",
+    "test_root":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wrapper-stub-tests"
+}

@@ -1,0 +1,45 @@
+﻿# Large / generated / local
+cache/
+env/
+全景素材/
+.grok-tasks/
+logs/
+*.ply
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.whl
+*.partial
+*.zip
+*.7z
+*.rar
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.so
+*.dll
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+*.log
+
+# Job heavy outputs
+jobs/**/results/
+jobs/**/sfm-prep/
+jobs/**/*.ply
+
+# Secrets
+*.env
+.env.*
+!**/.env.example
+
+_gs-git-push.ps1
+_gs-git-finish.ps1
+
+
+_gs-git-push.ps1
+_gs-git-finish.ps1
+

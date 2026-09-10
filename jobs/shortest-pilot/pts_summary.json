@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "parser": "ffprobe -show_frames json",
+  "frame_rows": 476,
+  "pts_count": 476,
+  "pts_first": 0.0,
+  "pts_last": 47.494967,
+  "pts_span_sec": 47.494967,
+  "dt_median_sec": 0.09998899999999988,
+  "dt_mean_sec": 0.09998940421052632,
+  "dt_min_sec": 0.0972780000000002,
+  "dt_max_sec": 0.10266599999999926,
+  "dt_std_sec": 0.00030567099062308564,
+  "negative_or_zero_dt": 0,
+  "keyframe_count": 48,
+  "csv": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\jobs\\shortest-pilot\\pts_samples.csv",
+  "stderr_tail": ""
+}

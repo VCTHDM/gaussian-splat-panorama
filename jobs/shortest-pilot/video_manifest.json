@@ -1,0 +1,195 @@
+{
+  "sort": "ffprobe_format.duration ascending; ties by name. NOT file size.",
+  "media_dir": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材",
+  "count": 4,
+  "videos": [
+    {
+      "name": "f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+      "size_bytes": 15709553,
+      "mtime_utc": "2026-09-09T10:47:50.993894+00:00",
+      "duration_sec": 47.594944,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "bit_rate": "2640541",
+      "format_tags": {
+        "major_brand": "mp42",
+        "minor_version": "0",
+        "compatible_brands": "isommp42",
+        "creation_time": "2026-09-06T10:16:09.000000Z",
+        "com.android.version": "16"
+      },
+      "video": {
+        "codec": "h264",
+        "profile": "High",
+        "width": 1280,
+        "height": 640,
+        "aspect_w_over_h": 2.0,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "1224000/122387",
+        "r_frame_rate": "10/1",
+        "nb_frames": "476",
+        "color_space": "smpte170m",
+        "tags": {
+          "creation_time": "2026-09-06T10:16:09.000000Z",
+          "language": "eng",
+          "handler_name": "VideoHandle"
+        },
+        "side_data_list": null
+      },
+      "audio_codecs": [
+        "aac"
+      ],
+      "ffprobe_error": null,
+      "ratio_2_1_candidate": true,
+      "has_spherical_tag": false
+    },
+    {
+      "name": "36ce33bd12bfca4f54b7b380292e121f.mp4",
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\36ce33bd12bfca4f54b7b380292e121f.mp4",
+      "size_bytes": 17595516,
+      "mtime_utc": "2026-09-09T10:47:51.910907+00:00",
+      "duration_sec": 53.291722,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "bit_rate": "2641388",
+      "format_tags": {
+        "major_brand": "mp42",
+        "minor_version": "0",
+        "compatible_brands": "isommp42",
+        "creation_time": "2026-09-06T10:16:18.000000Z",
+        "com.android.version": "16"
+      },
+      "video": {
+        "codec": "h264",
+        "profile": "High",
+        "width": 1280,
+        "height": 640,
+        "aspect_w_over_h": 2.0,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "9594000/959251",
+        "r_frame_rate": "10/1",
+        "nb_frames": "533",
+        "color_space": "smpte170m",
+        "tags": {
+          "creation_time": "2026-09-06T10:16:18.000000Z",
+          "language": "eng",
+          "handler_name": "VideoHandle"
+        },
+        "side_data_list": null
+      },
+      "audio_codecs": [
+        "aac"
+      ],
+      "ffprobe_error": null,
+      "ratio_2_1_candidate": true,
+      "has_spherical_tag": false
+    },
+    {
+      "name": "video_20260906_180959.mp4",
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\video_20260906_180959.mp4",
+      "size_bytes": 110949199,
+      "mtime_utc": "2026-09-09T10:48:03.644900+00:00",
+      "duration_sec": 73.1015,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "bit_rate": "12141934",
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2mp41",
+        "creation_time": "2026-09-06T10:09:38.000000Z",
+        "make": "mentech",
+        "make-eng": "mentech",
+        "model": "PanoX V3",
+        "model-eng": "PanoX V3",
+        "artist": "PanoX V3_7251",
+        "artist-eng": "PanoX V3_7251",
+        "firmware": "8.30.7701"
+      },
+      "video": {
+        "codec": "hevc",
+        "profile": "Main",
+        "width": 3840,
+        "height": 1920,
+        "aspect_w_over_h": 2.0,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "10980000/1096387",
+        "r_frame_rate": "10/1",
+        "nb_frames": "732",
+        "color_space": "bt709",
+        "tags": {
+          "creation_time": "2026-09-06T10:09:38.000000Z",
+          "language": "und",
+          "handler_name": "VideoHandler"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "Spherical Mapping",
+            "projection": "equirectangular",
+            "yaw": 0,
+            "pitch": 0,
+            "roll": 0
+          }
+        ]
+      },
+      "audio_codecs": [
+        "aac"
+      ],
+      "ffprobe_error": null,
+      "ratio_2_1_candidate": true,
+      "has_spherical_tag": true
+    },
+    {
+      "name": "video_20260906_181540.mp4",
+      "path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\video_20260906_181540.mp4",
+      "size_bytes": 230359335,
+      "mtime_utc": "2026-09-09T10:48:04.075728+00:00",
+      "duration_sec": 151.087646,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "bit_rate": "12197388",
+      "format_tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2mp41",
+        "creation_time": "2026-09-06T10:14:58.000000Z",
+        "make": "mentech",
+        "make-eng": "mentech",
+        "model": "PanoX V3",
+        "model-eng": "PanoX V3",
+        "artist": "PanoX V3_7251",
+        "artist-eng": "PanoX V3_7251",
+        "firmware": "8.30.7701"
+      },
+      "video": {
+        "codec": "hevc",
+        "profile": "Main",
+        "width": 3840,
+        "height": 1920,
+        "aspect_w_over_h": 2.0,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "1087920/108709",
+        "r_frame_rate": "10/1",
+        "nb_frames": "1511",
+        "color_space": "bt709",
+        "tags": {
+          "creation_time": "2026-09-06T10:14:58.000000Z",
+          "language": "und",
+          "handler_name": "VideoHandler"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "Spherical Mapping",
+            "projection": "equirectangular",
+            "yaw": 0,
+            "pitch": 0,
+            "roll": 0
+          }
+        ]
+      },
+      "audio_codecs": [
+        "aac"
+      ],
+      "ffprobe_error": null,
+      "ratio_2_1_candidate": true,
+      "has_spherical_tag": true
+    }
+  ]
+}

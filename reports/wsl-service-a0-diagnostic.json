@@ -1,0 +1,28 @@
+﻿{
+    "captured_utc":  "2026-09-09T12:39:50.5477995Z",
+    "finding":  "MSI succeeded, WslService stopped with Win32 exit 1058. Ubuntu target directory still empty; import waiting on unavailable service.",
+    "service":  {
+                    "Name":  "WSLService",
+                    "State":  "Stopped",
+                    "StartMode":  "Auto",
+                    "ExitCode":  1058,
+                    "PathName":  "\"C:\\Program Files\\WSL\\wslservice.exe\""
+                },
+    "event":  [
+                  {
+                      "TimeCreated":  "\/Date(1788957526368)\/",
+                      "Id":  7023,
+                      "Message":  "WSL Service 服务因下列错误而停止: \r\nThe service cannot be started, either because it is disabled or because it has no enabled devices associated with it."
+                  },
+                  {
+                      "TimeCreated":  "\/Date(1788957406315)\/",
+                      "Id":  7023,
+                      "Message":  "WSL Service 服务因下列错误而停止: \r\nThe service cannot be started, either because it is disabled or because it has no enabled devices associated with it."
+                  }
+              ],
+    "official_sources":  [
+                             "https://github.com/microsoft/WSL/blob/2.7.13/src/windows/service/exe/ServiceMain.cpp",
+                             "https://github.com/microsoft/WSL/blob/2.7.13/src/windows/common/helpers.cpp"
+                         ],
+    "inference":  "ServiceMain.cpp explicitly returns ERROR_SERVICE_DISABLED if IWslSupport OS COM interface is missing. Need verify exact registry constant and OS component files; do not fabricate registry entries or blindly reboot."
+}

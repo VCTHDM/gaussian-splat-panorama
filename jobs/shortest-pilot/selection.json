@@ -1,0 +1,32 @@
+{
+  "selected_name": "f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+  "selected_path": "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\全景素材\\f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+  "duration_sec": 47.594944,
+  "size_bytes": 15709553,
+  "reason": "Shortest ffprobe format.duration among 4 readable videos (47.594944 s). File size was not used for ranking.",
+  "ranked_durations_sec": [
+    {
+      "name": "f640ef4cc3c8cbda0df51f7eb2d79368.mp4",
+      "duration_sec": 47.594944,
+      "size_bytes": 15709553
+    },
+    {
+      "name": "36ce33bd12bfca4f54b7b380292e121f.mp4",
+      "duration_sec": 53.291722,
+      "size_bytes": 17595516
+    },
+    {
+      "name": "video_20260906_180959.mp4",
+      "duration_sec": 73.1015,
+      "size_bytes": 110949199
+    },
+    {
+      "name": "video_20260906_181540.mp4",
+      "duration_sec": 151.087646,
+      "size_bytes": 230359335
+    }
+  ],
+  "process_seconds": 47.594944,
+  "process_seconds_rule": "min(duration, 90). This clip is shorter than 90s so the whole clip is processed.",
+  "sha256": "95c670dfa5ddd1659cf01d4c6da8d44feda6762ad3c8d9b97c437a00a9053a1b"
+}

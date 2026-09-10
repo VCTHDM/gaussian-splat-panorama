@@ -1,0 +1,175 @@
+{
+    "schema":  "gs.wsl.install.v1",
+    "started_utc":  "2026-09-09T12:36:35.8936088Z",
+    "pinned":  {
+                   "wsl_msi":  {
+                                   "url":  "https://github.com/microsoft/WSL/releases/download/2.7.13/wsl.2.7.13.0.x64.msi",
+                                   "sha256":  "a3505a50f4cc585551d11d9de824ba4375448d7a68f2e71d3fb315fa986fc754",
+                                   "bytes":  258985984,
+                                   "version":  "2.7.13",
+                                   "prerelease":  false
+                               },
+                   "ubuntu":  {
+                                  "url":  "https://releases.ubuntu.com/jammy/ubuntu-22.04.5-wsl-amd64.wsl",
+                                  "sha256":  "4499c4fe257f2fc83145b429ce211a0a43fd590e70d6261ede616210947d9f8f",
+                                  "bytes":  360684292,
+                                  "name":  "GS-Ubuntu2204",
+                                  "version":  "22.04.5"
+                              }
+               },
+    "steps":  [
+                  {
+                      "name":  "disk",
+                      "ok":  true,
+                      "detail":  "free_gib=212.8",
+                      "utc":  "2026-09-09T12:36:35.9857980Z"
+                  },
+                  {
+                      "name":  "download-cap",
+                      "ok":  true,
+                      "detail":  "MSI+Ubuntu ~591MB \u003c 4GB",
+                      "utc":  "2026-09-09T12:36:36.0092135Z"
+                  },
+                  {
+                      "name":  "same-target-process",
+                      "ok":  true,
+                      "detail":  "related=0",
+                      "utc":  "2026-09-09T12:36:36.1266546Z"
+                  },
+                  {
+                      "name":  "download-skip:wsl.2.7.13.0.x64.msi",
+                      "ok":  true,
+                      "detail":  "already present sha256 ok",
+                      "utc":  "2026-09-09T12:36:36.4128424Z"
+                  },
+                  {
+                      "name":  "authenticode",
+                      "ok":  true,
+                      "detail":  "status=Valid subject=CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+                      "utc":  "2026-09-09T12:36:37.1813465Z"
+                  },
+                  {
+                      "name":  "msiexec",
+                      "ok":  true,
+                      "detail":  "exit=0 timeout=False",
+                      "utc":  "2026-09-09T12:36:45.8347987Z"
+                  },
+                  {
+                      "name":  "wsl.exe-present",
+                      "ok":  true,
+                      "detail":  "C:\\Program Files\\WSL\\wsl.exe",
+                      "utc":  "2026-09-09T12:36:45.8981718Z"
+                  },
+                  {
+                      "name":  "wsl --version",
+                      "ok":  true,
+                      "detail":  "exit=0 timeout=False",
+                      "utc":  "2026-09-09T12:37:01.2183550Z"
+                  },
+                  {
+                      "name":  "wsl --status",
+                      "ok":  false,
+                      "detail":  "exit=-1 timeout=True",
+                      "utc":  "2026-09-09T12:37:01.2243955Z"
+                  },
+                  {
+                      "name":  "download-skip:ubuntu-22.04.5-wsl-amd64.wsl",
+                      "ok":  true,
+                      "detail":  "already present sha256 ok",
+                      "utc":  "2026-09-09T12:37:01.5664542Z"
+                  },
+                  {
+                      "name":  "distro-install",
+                      "ok":  false,
+                      "detail":  "kind=from-file exit=-1 timeout=False",
+                      "utc":  "2026-09-09T12:39:51.2579036Z"
+                  },
+                  {
+                      "name":  "distro-listed",
+                      "ok":  false,
+                      "detail":  "",
+                      "utc":  "2026-09-09T12:40:11.2838575Z"
+                  }
+              ],
+    "reboot_required":  false,
+    "reboot_performed":  false,
+    "user_action_required":  null,
+    "ready_to_start_distro":  false,
+    "disk":  {
+                 "cache":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl",
+                 "free_bytes":  228493897728,
+                 "free_gib":  212.8,
+                 "need_bytes":  2767153924
+             },
+    "pre_processes":  [
+
+                      ],
+    "msi_signature":  {
+                          "status":  "Valid",
+                          "subject":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+                          "issuer":  "CN=Microsoft Code Signing PCA 2024, O=Microsoft Corporation, C=US",
+                          "thumbprint":  "AB172913A2960A224809EE8A0C371CD47A079B72"
+                      },
+    "msiexec":  {
+                    "exit_code":  0,
+                    "timed_out":  false,
+                    "killed_self_child":  false,
+                    "pid":  28416,
+                    "log":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\logs\\wsl\\msiexec-wsl-2.7.13.log",
+                    "transport_ok":  true,
+                    "error":  null
+                },
+    "wsl_candidates":  [
+                           {
+                               "path":  "C:\\Windows\\System32\\wsl.exe",
+                               "exists":  false
+                           },
+                           {
+                               "path":  "C:\\Program Files\\WSL\\wsl.exe",
+                               "exists":  true
+                           }
+                       ],
+    "wsl_exe":  "C:\\Program Files\\WSL\\wsl.exe",
+    "wsl_exe_exists":  true,
+    "wsl_version":  {
+                        "exit_code":  0,
+                        "timed_out":  false,
+                        "stdout":  "WSL 版本: 2.7.13.0\r\n内核版本: 6.18.33.2-2\r\nWSLg 版本: 1.0.73.2\r\nMSRDC 版本: 1.2.7214\r\nDirect3D 版本: 1.611.1-81528511\r\nDXCore 版本: 10.0.26100.1-240331-1435.ge-release\r\nWindows: 10.0.26100.2314\r\n",
+                        "stderr":  ""
+                    },
+    "wsl_status":  {
+                       "exit_code":  -1,
+                       "timed_out":  true,
+                       "stdout":  "",
+                       "stderr":  ""
+                   },
+    "distros_before":  "",
+    "wsl_help_has_from_file":  true,
+    "wsl_help_has_location":  true,
+    "wsl_help_has_name":  true,
+    "wsl_help_has_no_launch":  true,
+    "wsl_help_has_import":  true,
+    "distro_install":  {
+                           "kind":  "from-file",
+                           "args":  [
+                                        "--install",
+                                        "--from-file",
+                                        "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\cache\\wsl\\ubuntu-22.04.5-wsl-amd64.wsl",
+                                        "--name",
+                                        "GS-Ubuntu2204",
+                                        "--location",
+                                        "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\wsl\\GS-Ubuntu2204",
+                                        "--no-launch"
+                                    ],
+                           "exit_code":  -1,
+                           "timed_out":  false,
+                           "stdout":  "",
+                           "stderr":  ""
+                       },
+    "distros_after":  "",
+    "distros_after_err":  "",
+    "distro_name":  "GS-Ubuntu2204",
+    "distro_location":  "C:\\Users\\Administrator\\Desktop\\01_项目与代码\\高斯破溅\\env\\wsl\\GS-Ubuntu2204",
+    "set_default_ran":  false,
+    "ended_utc":  "2026-09-09T12:40:11.2959961Z"
+}

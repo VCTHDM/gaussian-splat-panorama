@@ -1,0 +1,33 @@
+﻿{
+    "schema":  "gs.wsl.feature-enable.result.v1",
+    "created_utc":  "2026-09-09T13:10:35.6204818Z",
+    "status":  "enabled_reboot_required",
+    "executor":  "Grok CLI, Codex independent verification and final reporting",
+    "feature_state":  "Enabled",
+    "feature_state_query_exit_code":  0,
+    "enable_attempted":  true,
+    "enable_attempt_count":  1,
+    "enable_client_exit_code":  null,
+    "enable_client_exit_note":  "Independent Grok-launched host and DISM client disappeared without exit file. Exit code is unavailable. Actual outcome verified through read-only DISM feature query and CBS final session result.",
+    "cbs_session":  "31277147_3811460562",
+    "cbs_final_hresult":  "0x00000000",
+    "reboot_required":  true,
+    "reboot_performed":  false,
+    "cbs_reboot_pending":  true,
+    "iwslsupport_present":  false,
+    "wsl_usable":  false,
+    "ubuntu_imported":  false,
+    "gpu_verified":  false,
+    "approval_received":  true,
+    "approval_mechanism_changed":  false,
+    "permission_mode":  "auto",
+    "evidence":  [
+                     "reports/a0-wsl-feature-review.json",
+                     "logs/wsl/a0-after-enable-featureinfo.txt",
+                     "logs/wsl/a0-enable-cbs-evidence.txt",
+                     "logs/wsl/enable-feature-process.json",
+                     "logs/wsl/enable-feature-watch.log"
+                 ],
+    "next_task":  ".grok-tasks/09-after-reboot-ubuntu.md",
+    "next_action":  "Windows restart by user, then resume verification and Ubuntu import. Do not repeat MSI or Enable-Feature."
+}

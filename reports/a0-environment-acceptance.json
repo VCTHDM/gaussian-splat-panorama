@@ -1,0 +1,29 @@
+﻿{
+    "accepted_utc":  "2026-09-09T13:25:42.2435219Z",
+    "status":  "ready_for_sfm",
+    "ubuntu_ready":  true,
+    "gpu_driver_interface_visible":  true,
+    "cuda_torch_compute_tested":  false,
+    "reboot_required":  false,
+    "evidence":  "reports/wsl-post-reboot-verify.json",
+    "import_exit":  0,
+    "linux_probes":  [
+                         {
+                             "name":  "uname",
+                             "exit_code":  0
+                         },
+                         {
+                             "name":  "os-release",
+                             "exit_code":  0
+                         },
+                         {
+                             "name":  "nvidia-smi-path",
+                             "exit_code":  0
+                         },
+                         {
+                             "name":  "nvidia-smi",
+                             "exit_code":  0
+                         }
+                     ],
+    "next_task":  ".grok-tasks/03-shortest-sfm.md"
+}
